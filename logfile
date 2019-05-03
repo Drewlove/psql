@@ -1,0 +1,138 @@
+2019-04-30 07:40:43.311 EDT [3345] LOG:  listening on IPv6 address "::1", port 5432
+2019-04-30 07:40:43.312 EDT [3345] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-04-30 07:40:43.317 EDT [3345] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-04-30 07:40:43.345 EDT [3346] LOG:  database system was shut down at 2019-04-30 07:40:10 EDT
+2019-04-30 07:40:43.364 EDT [3345] LOG:  database system is ready to accept connections
+2019-04-30 07:40:49.533 EDT [3355] FATAL:  role "postgres" does not exist
+2019-04-30 07:40:58.571 EDT [3358] FATAL:  database "Drew" does not exist
+2019-04-30 07:41:35.995 EDT [3370] FATAL:  role "postgres" does not exist
+2019-04-30 07:41:47.205 EDT [3375] FATAL:  role "postgres" does not exist
+2019-04-30 07:42:47.635 EDT [3399] FATAL:  role "postgres" does not exist
+2019-04-30 07:43:22.599 EDT [3412] ERROR:  role "postgres" already exists
+2019-04-30 07:43:22.599 EDT [3412] STATEMENT:  CREATE ROLE postgres SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN;
+2019-04-30 07:43:31.452 EDT [3415] FATAL:  database "Drew" does not exist
+2019-04-30 07:43:35.682 EDT [3418] FATAL:  database "du" does not exist
+2019-04-30 07:43:40.926 EDT [3420] FATAL:  database "dt" does not exist
+2019-04-30 07:44:02.526 EDT [3422] ERROR:  syntax error at or near "dt" at character 1
+2019-04-30 07:44:02.526 EDT [3422] STATEMENT:  dt
+	;
+2019-04-30 07:44:15.029 EDT [3428] FATAL:  database "knex-practice" does not exist
+2019-04-30 07:44:26.360 EDT [3430] FATAL:  database "blogful_articles" does not exist
+2019-04-30 07:53:55.839 EDT [3875] ERROR:  syntax error at or near "blogful_articles" at character 6
+2019-04-30 07:53:55.839 EDT [3875] STATEMENT:  DROP blogful_articles
+	;
+2019-04-30 07:54:26.755 EDT [3875] ERROR:  cannot drop the currently open database
+2019-04-30 07:54:26.755 EDT [3875] STATEMENT:  DROP DATABASE blogful_articles
+	;
+2019-04-30 07:54:39.218 EDT [4165] FATAL:  database "Drew" does not exist
+2019-04-30 07:55:06.621 EDT [4168] ERROR:  syntax error at or near "createdb" at character 1
+2019-04-30 07:55:06.621 EDT [4168] STATEMENT:  createdb knex-practice
+	;
+2019-04-30 07:55:19.096 EDT [4168] ERROR:  syntax error at or near "-" at character 21
+2019-04-30 07:55:19.096 EDT [4168] STATEMENT:  CREATE DATABASE knex-practice;
+2019-04-30 07:56:04.816 EDT [4168] ERROR:  syntax error at or near "-" at character 21
+2019-04-30 07:56:04.816 EDT [4168] STATEMENT:  CREATE DATABASE knex-practice;
+2019-04-30 07:57:24.076 EDT [4227] ERROR:  syntax error at or near "-" at character 21
+2019-04-30 07:57:24.076 EDT [4227] STATEMENT:  CREATE DATABASE knex-practice;
+2019-04-30 07:58:58.350 EDT [4227] ERROR:  syntax error at or near "-" at character 1
+2019-04-30 07:58:58.350 EDT [4227] STATEMENT:  -f ./sql-scripts/create.blogful.sql;
+2019-04-30 07:59:53.824 EDT [4287] FATAL:  database "knex-practice" does not exist
+2019-04-30 08:03:38.398 EDT [4314] ERROR:  syntax error at or near "psql" at character 1
+2019-04-30 08:03:38.398 EDT [4314] STATEMENT:  psql -U dunder-mifflin -d knex_practice -f ./sql-scripts/create.blogful.sql
+	psql -U dunder-mifflin -d knex-practice -f ./sql-scripts/seed.blogful.sql 
+	;
+2019-04-30 08:04:00.118 EDT [4346] FATAL:  database "knex-practice" does not exist
+2019-04-30 08:05:07.849 EDT [4354] ERROR:  syntax error at or near "npm" at character 1
+2019-04-30 08:05:07.849 EDT [4354] STATEMENT:  npm t
+	;
+2019-04-30 08:05:16.586 EDT [4366] FATAL:  database "knex-practice-test" does not exist
+2019-04-30 08:09:45.959 EDT [4435] FATAL:  database "knex-practice-test" does not exist
+2019-04-30 08:12:06.292 EDT [4476] FATAL:  database "knex_practice_test" does not exist
+2019-04-30 08:23:35.311 EDT [4354] ERROR:  syntax error at or near "npm" at character 1
+2019-04-30 08:23:35.311 EDT [4354] STATEMENT:  npm t
+	;
+2019-04-30 09:13:16.803 EDT [5610] ERROR:  invalid input syntax for type timestamp: "new Date()"
+2019-04-30 09:13:16.803 EDT [5610] STATEMENT:  update "blogful_articles" set "title" = $1, "content" = $2, "date_published" = $3 where "id" = $4
+2019-05-01 17:52:07.298 EDT [21119] FATAL:  database "knex-practice" does not exist
+2019-05-01 17:52:24.262 EDT [21122] ERROR:  relation "knex_practice" does not exist at character 16
+2019-05-01 17:52:24.262 EDT [21122] STATEMENT:  SELECT * 
+	FROM knex_practice;
+2019-05-01 17:52:42.345 EDT [21122] ERROR:  SELECT * with no tables specified is not valid at character 8
+2019-05-01 17:52:42.345 EDT [21122] STATEMENT:  SELECT * 
+	;
+2019-05-01 17:53:23.963 EDT [21141] FATAL:  database "knex-practice" does not exist
+2019-05-01 17:54:21.093 EDT [21155] FATAL:  database "knex_pactice" does not exist
+2019-05-01 17:55:58.306 EDT [21176] ERROR:  syntax error at or near "psql" at character 1
+2019-05-01 17:55:58.306 EDT [21176] STATEMENT:  psql -U dunder-mifflin
+	;
+2019-05-01 17:57:13.414 EDT [21193] ERROR:  syntax error at or near "db" at character 6
+2019-05-01 17:57:13.414 EDT [21193] STATEMENT:  drop db knex-practice
+	;
+2019-05-01 17:57:25.178 EDT [21193] ERROR:  syntax error at or near "knex" at character 6
+2019-05-01 17:57:25.178 EDT [21193] STATEMENT:  DROP knex-practice;
+2019-05-01 17:57:30.995 EDT [21193] ERROR:  syntax error at or near "-" at character 19
+2019-05-01 17:57:30.995 EDT [21193] STATEMENT:  DROP DATABASE knex-practice;
+2019-05-01 17:58:15.338 EDT [21218] ERROR:  syntax error at or near "-" at character 19
+2019-05-01 17:58:15.338 EDT [21218] STATEMENT:  DROP DATABASE knex-practice;
+2019-05-01 17:59:38.472 EDT [21231] ERROR:  syntax error at or near "-" at character 19
+2019-05-01 17:59:38.472 EDT [21231] STATEMENT:  DROP DATABASE knex-practice-test;
+2019-05-01 18:00:08.220 EDT [21240] ERROR:  relation "knex_practice" does not exist at character 15
+2019-05-01 18:00:08.220 EDT [21240] STATEMENT:  SELECT * FROM knex_practice;
+2019-05-01 18:03:34.626 EDT [21293] ERROR:  syntax error at or near "-" at character 19
+2019-05-01 18:03:34.626 EDT [21293] STATEMENT:  DROP DATABASE knex-practice-test;
+2019-05-01 18:05:36.741 EDT [21322] ERROR:  syntax error at or near "-" at character 23
+2019-05-01 18:05:36.741 EDT [21322] STATEMENT:  SELECT * FROM shopping-list;
+2019-05-02 18:58:06.597 EDT [29620] ERROR:  column "id" of relation "shopping_list" does not exist at character 67
+2019-05-02 18:58:06.597 EDT [29620] STATEMENT:  insert into "shopping_list" ("category", "checked", "date_added", "id", "name", "price") values ($1, $2, $3, $4, $5, $6), ($7, $8, $9, $10, $11, $12), ($13, $14, $15, $16, $17, $18)
+2019-05-02 19:01:12.776 EDT [29695] ERROR:  relation "shopping_list" does not exist at character 13
+2019-05-02 19:01:12.776 EDT [29695] STATEMENT:  INSERT INTO shopping_list (name, price, category, checked, date_added)
+	VALUES
+	    ('Fish tricks', 13.10, 'Main',              false,  now() - '21 days'::INTERVAL),
+	    ('Not Dogs', 4.99, 'Snack',                 true,   now() - '21 days'::INTERVAL),
+	    ('Bluffalo Wings', 5.50, 'Snack',           false,  now() - '21 days'::INTERVAL),
+	    ('SubstiTuna Salad', 1.24, 'Lunch',         false,  now() - '21 days'::INTERVAL),
+	    ('Tofurkey', 2.50, 'Breakfast',             false,  now() - '21 days'::INTERVAL),
+	    ('Pretenderloins', 9.99, 'Main',            false,  now() - '9 days'::INTERVAL),
+	    ('Steak-believe', 6.00, 'Main',             false,  now() - '9 days'::INTERVAL),
+	    ('Kale Seitan', 6.67, 'Breakfast',          false,  now() - '9 days'::INTERVAL),
+	    ('NoBull Burger', 2.00, 'Snack',            false,  now() - '9 days'::INTERVAL),
+	    ('Turnip the Beet', 0.20, 'Lunch',          true,   now() - '9 days'::INTERVAL),
+	    ('Mascarphony', 1.80, 'Lunch',              true,   now() - '7 days'::INTERVAL),
+	    ('Burgatory', 1.50, 'Main',                 false,  now() - '7 days'::INTERVAL),
+	    ('Sleight of Ham', 3.10, 'Lunch',           false,  now() - '5 days'::INTERVAL),
+	    ('Antichovies', 1.00, 'Breakfast',          false,  now() - '5 days'::INTERVAL),
+	    ('Lettuce B. Frank', 0.86, 'Lunch',         true,   now() - '5 days'::INTERVAL),
+	    ('Pepperphony', 1.40, 'Breakfast',          false,  now() - '5 days'::INTERVAL),
+	    ('Shamburger', 3.50, 'Main',                false,  now() - '4 days'::INTERVAL),
+	    ('Facon', 1.90, 'Breakfast',                false,  now() - '4 days'::INTERVAL),
+	    ('Salami-get-this-straight', 3.00, 'Snack', false,  now() - '4 days'::INTERVAL),
+	    ('Mi-steak', 7.67, 'Main',                  false,  now() - '3 days'::INTERVAL),
+	    ('Ghost Beef', 4.33, 'Main',                false,  now() - '3 days'::INTERVAL),
+	    ('Cheatloaf', 5.00, 'Main',                 false,  now() - '3 days'::INTERVAL),
+	    ('Fried Trickin', 6.40, 'Snack',            false,  now() - '3 days'::INTERVAL),
+	    ('Salmock', 7.16, 'Breakfast',              false,  now() - '3 days'::INTERVAL),
+	    ('Leaf Stroganoff', 6.80, 'Main',           false,  now() - '2 days'::INTERVAL),
+	    ('Chicken Noodle Spoof', 2.50, 'Lunch',     false,  now() - '2 days'::INTERVAL),
+	    ('Pep-parody Pizza', 4.00, 'Lunch',         false,  now() - '2 days'::INTERVAL),
+	    ('Arti-fish-al pie', 8.40, 'Main',          false,  now() - '1 days'::INTERVAL),
+	    ('Bolphony sandwiches', 2.10, 'Lunch',      false,  now()),
+	    ('Chili non-carne', 5.88, 'Main',           true,   now()),
+	    ('Don''t go bacon my heart', 4.20, 'Main',  false,  now())
+	;
+2019-05-02 19:16:11.767 EDT [29996] ERROR:  column "id" does not exist at character 35
+2019-05-02 19:16:11.767 EDT [29996] STATEMENT:  delete from "shopping_list" where "id" = $1
+2019-05-03 14:59:10.105 EDT [34182] ERROR:  column "id" does not exist at character 35
+2019-05-03 14:59:10.105 EDT [34182] STATEMENT:  delete from "shopping_list" where "id" = $1
+2019-05-03 15:00:19.575 EDT [34230] ERROR:  column "id" does not exist at character 35
+2019-05-03 15:00:19.575 EDT [34230] STATEMENT:  delete from "shopping_list" where "id" = $1
+2019-05-03 15:04:00.453 EDT [34310] ERROR:  column "id" does not exist at character 37
+2019-05-03 15:04:00.453 EDT [34310] STATEMENT:  select * from "shopping_list" where "id" = $1 limit $2
+2019-05-03 15:07:55.210 EDT [34378] ERROR:  column "id" does not exist at character 37
+2019-05-03 15:07:55.210 EDT [34378] STATEMENT:  select * from "shopping_list" where "id" = $1 limit $2
+2019-05-03 15:24:37.167 EDT [34663] ERROR:  column "id" does not exist at character 37
+2019-05-03 15:24:37.167 EDT [34663] STATEMENT:  select * from "shopping_list" where "id" = $1 limit $2
+2019-05-03 15:25:47.670 EDT [34705] ERROR:  column "id" does not exist at character 37
+2019-05-03 15:25:47.670 EDT [34705] STATEMENT:  select * from "shopping_list" where "id" = $1 limit $2
+2019-05-03 15:29:08.509 EDT [34814] ERROR:  duplicate key value violates unique constraint "shopping_list_pkey"
+2019-05-03 15:29:08.509 EDT [34814] DETAIL:  Key (product_id)=(2) already exists.
+2019-05-03 15:29:08.509 EDT [34814] STATEMENT:  insert into "shopping_list" ("category", "checked", "date_added", "name", "price", "product_id") values ($1, $2, $3, $4, $5, $6), ($7, $8, $9, $10, $11, $12), ($13, $14, $15, $16, $17, $18)
